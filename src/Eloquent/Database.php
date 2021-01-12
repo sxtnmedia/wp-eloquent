@@ -73,7 +73,7 @@ class Database implements ConnectionInterface
      *
      * @return \Illuminate\Database\Query\Builder
      */
-    public function table($table)
+    public function table($table, $as = NULL)
     {
         $processor = $this->getPostProcessor();
 
